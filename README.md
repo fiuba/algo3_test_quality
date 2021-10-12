@@ -1,24 +1,31 @@
 # Calidad de nuestras pruebas
 
+[video explicativo](https://drive.google.com/file/d/1P5pOSKhjLh5wWuZ6TVr_JWRgYqRq80hf/view?usp=sharing)
+
 ## Introducción
 
-Nuestro objetivo sera definir un conjunto de critérios, iniciales, acerca de la calidad de las pruebas que escribimos. Comenzaremos haciendonos las siguientes preguntas...
+Nuestro objetivo será definir un conjunto de criterios, iniciales, acerca de la calidad de las pruebas que escribimos. Comenzaremos haciéndonos las siguientes preguntas...
 
 Preguntas:
 - Cuando el conjunto de pruebas que hemos escrito tiene calidad? 
 - Podemos dar una respuesta formal a este interrogante?
 - Cuáles herramientas técnicas y/o prácticas pueden ayudarnos a calificar la calidad de las pruebas?
 
-Diremos que un conjunto de pruebas guarda calidad si:
+Diremos que un conjunto de pruebas guarda un **mínimo de calidad** si:
 
 - **SUT** es un *caso de uso*. 
 - El porcentaje de **cobertura** del código en ejercicio es mayor a %T.
-- Nigún mutante sobrevive a las **pruebas de mutación**.
+- Ningún mutante sobrevive a las **pruebas de mutación**.
 
-**NOTA**:
-La estructura Arrange Act Assert no figura en la lista ya que se verifica atraves de las pruebas de mutación. 
+La estructura Arrange Act Assert no figura en la lista, ya que se verifica a través de las pruebas de mutación. 
 
-Para nuestro análisis utilizaremos un problema cuyos requesitos están descriptos por un conjunto de pruebas. Estas pruebas guardan una estructura AAA (Arrage, Act y Assert). Ver archivo de [requisitos](tests/TP1-Requeriments-Tests.st)
+**IMPORTANTE:**
+
+Los criterios mencionados anteriormente no implican que el desarrollador deba omitir escribir pruebas específicas para probar condiciones de borde específicas. 
+
+### Acerca de los requisitos del problema
+
+Para nuestro análisis utilizaremos un problema cuyos requisitos están descritos por un conjunto de pruebas. Estas pruebas guardan una estructura AAA (Arrage, Act y Assert). Ver archivo de [requisitos](tests/TP1-Requeriments-Tests.st)
 
 ## SUT (system under test)
 
@@ -30,7 +37,7 @@ La herramienta de cobertura provista por el *Test runner* de [Pharo](https://pha
 
 ## Pruebas de mutación
 
-Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuozo**. 
+Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
 
 La herramienta que vamos a utilizar para ejecutar estas pruebas de mutación será: [MuTalk](https://github.com/pavel-krivanek/mutalk).
 
