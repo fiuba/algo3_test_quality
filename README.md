@@ -1,6 +1,8 @@
 # Calidad de nuestras pruebas
 
-[video explicativo](https://drive.google.com/file/d/1P5pOSKhjLh5wWuZ6TVr_JWRgYqRq80hf/view?usp=sharing)
+[Como instalar Mutalk](https://drive.google.com/file/d/1pg-ax1L-88Bdyvn5xR8UCOaX4RI-_tE9/view?usp=sharing)
+
+[Calidad de nuestras prueba - explicación](https://drive.google.com/file/d/1P5pOSKhjLh5wWuZ6TVr_JWRgYqRq80hf/view?usp=sharing)
 
 ## Introducción
 
