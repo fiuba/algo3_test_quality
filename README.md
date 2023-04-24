@@ -39,7 +39,7 @@ La herramienta de cobertura provista por el *Test runner* de [Pharo](https://pha
 
 ## Pruebas de mutación
 
-Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
+Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante es el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
 
 La herramienta que vamos a utilizar para ejecutar estas pruebas de mutación será: [MuTalk](https://github.com/pavel-krivanek/mutalk).
 
@@ -49,7 +49,7 @@ Para ejecutar las pruebas de mutación y obtener el reporte necesitamos:
 - Listar el conjunto de clases que serán mutadas: `AlgoRemis`, `Chofer`, etc.
 
 ```smalltalk
-| testSuit analysis alive browser |
+| testSuit analysis alive browser classesToMutate |
 testSuit := {
 	AlgoRemisTest.
 	TestValorPeajeEscalonado .
