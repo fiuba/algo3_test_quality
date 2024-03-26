@@ -1,8 +1,8 @@
 # Calidad de nuestras pruebas
 
-[Como instalar Mutalk](https://fiubaar-my.sharepoint.com/:v:/g/personal/disanchez_fi_uba_ar/EfkfHHGhfCVJq_Dbkc8yqoEBO6WofQbASujaDr0JKc0BTw?e=Q2CaYz)
+[Como instalar Mutalk](https://fiubaar-my.sharepoint.com/:v:/g/personal/disanchez_fi_uba_ar/EfkfHHGhfCVJq_Dbkc8yqoEBMvsYBYbPNw8CXOgoaYrPTA?e=grye9E)
 
-[Calidad de nuestras prueba - explicación](https://fiubaar-my.sharepoint.com/:v:/g/personal/disanchez_fi_uba_ar/EVSrPXvRRiNImBWb1MBtrWoB8OFs9m8_PDzCHJ7hQ_Qnyg?e=by5GlI)
+[Calidad de nuestras prueba - explicación](https://fiubaar-my.sharepoint.com/:v:/g/personal/disanchez_fi_uba_ar/EVSrPXvRRiNImBWb1MBtrWoBGlq19b-DG5efx3w9JytkZA?e=Ywg6QU)
 
 ## Introducción
 
