@@ -31,7 +31,7 @@ Para nuestro análisis utilizaremos un problema cuyos requisitos están descrito
 
 ## SUT (system under test)
 
-Tomaremos como unidad de prueba a un caso de uso. Esta estratégia reduce el número de pruebas que serán afectadas durante el proceso de refactor. Tomar el SUT una clase podrá resultar en la necesidad de eliminar/actualizar pruebas de esta clase, además de no brindar una funcionalidad que contribuya a cumplir con el caso de uso. 
+Tomaremos como unidad de prueba a un caso de uso. Esta estratégia reduce el número de pruebas que serán afectadas durante el proceso de refactor. Tomar el SUT como una clase podrá resultar en la necesidad de eliminar/actualizar pruebas de esta clase, además de no brindar una funcionalidad que contribuya a cumplir con el caso de uso. 
 
 ## Cobertura
 
@@ -39,7 +39,7 @@ La herramienta de cobertura provista por el *Test runner* de [Pharo](https://pha
 
 ## Pruebas de mutación
 
-Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
+Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante es el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
 
 La herramienta que vamos a utilizar para ejecutar estas pruebas de mutación será: [MuTalk](https://github.com/pavel-krivanek/mutalk).
 
