@@ -49,13 +49,9 @@ Para ejecutar las pruebas de mutación y obtener el reporte necesitamos:
 - Listar el conjunto de clases que serán mutadas: `AlgoRemis`, `Chofer`, etc.
 
 ```smalltalk
-| testSuit analysis alive browser |
-testSuit := {
-	AlgoRemisTest.
-	TestValorPeajeEscalonado .
-	TestDestino.
-}.
-classesToMutate := { AlgoRemis  .
+"Put here the classes you want to mutate"
+classesToMutate := {
+	AlgoRemis  .
 	Chofer.
 	ChoferComun .
 	ChoferElectrico .
@@ -66,21 +62,20 @@ classesToMutate := { AlgoRemis  .
 	ValorPeajeEscalonado .
 	ValorEstandard .
 }.
-analysis := MutationTestingAnalysis
-    testCasesFrom: testSuit
-    mutating: classesToMutate 
-    using: MutantOperator contents
-    with: AllTestsMethodsRunningMutantEvaluationStrategy new.
-analysis run.
-alive := analysis generalResult aliveMutants.
+"Put here the test classes associated with"
+testClasses :=  {
+	AlgoRemisTest.
+	TestValorPeajeEscalonado .
+	TestDestino.
+ }.
 
-"Display result in Glamorous Browser"
-browser := GLMTabulator new.
-browser 
-	row: #results;
-	row: #diff.
-browser transmit to: #results.
-browser transmit to: #diff; from: #results; andShow: [ :a | 
-	a diff display: [ :mutant | {((RBParser parseMethod: (mutant mutant originalSource)) formattedCode) . ((RBParser parseMethod: (mutant mutant modifiedSource)) formattedCode)}] ].
-browser openOn: alive.
+analysis := MTAnalysis new
+    classesToMutate: classesToMutate;
+    testClasses: testClasses.
+
+analysis run.
+
+"To inspect the results"
+analysis generalResult inspect.
+
 ```
