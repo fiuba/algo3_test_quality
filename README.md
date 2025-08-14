@@ -4,6 +4,9 @@
 
 [Calidad de nuestras prueba - explicación](https://youtu.be/kH3esHCGUdY)
 
+> [!WARNING]
+> En el video se muestra una version legacy de MuTalk el repositorio oficial es el del siguiente [enlace](https://github.com/pharo-contributions/mutalk)
+
 ## Introducción
 
 Nuestro objetivo será definir un conjunto de criterios, iniciales, acerca de la calidad de las pruebas que escribimos. Comenzaremos haciéndonos las siguientes preguntas...
