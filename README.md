@@ -5,7 +5,7 @@
 [Calidad de nuestras prueba - explicación](https://youtu.be/kH3esHCGUdY)
 
 > [!WARNING]
-> En el video se muestra una version legacy de MuTalk el repositorio oficial es el del siguiente [enlace](https://github.com/pharo-contributions/mutalk)
+> En el video se muestra una version legacy de MuTalk el repositorio oficial es del siguiente [enlace](https://github.com/pharo-contributions/mutalk)
 
 ## Introducción
 
@@ -44,7 +44,7 @@ La herramienta de cobertura provista por el *Test runner* de [Pharo](https://pha
 
 Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
 
-La herramienta que vamos a utilizar para ejecutar estas pruebas de mutación será: [MuTalk](https://github.com/pavel-krivanek/mutalk).
+La herramienta que vamos a utilizar para ejecutar estas pruebas de mutación será: [MuTalk](https://github.com/pharo-contributions/mutalk).
 
 Para ejecutar las pruebas de mutación y obtener el reporte necesitamos:
 
