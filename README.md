@@ -13,7 +13,7 @@
 |---------------|---------|
 | PharoLauncher | 3.4.3   |
 | Pharo         | 11      |
-| MuTalk        | 2.5.0   |
+| MuTalk        | 2.3.0   |
 
 ## Introducción
 
@@ -53,6 +53,9 @@ La herramienta de cobertura provista por el *Test runner* de [Pharo](https://pha
 Las pruebas de mutación toman un conjunto de pruebas y un código que estas pruebas ejercitan. Aplicando alteraciones al código bajo ejercicio, se crean *mutantes*. Un mutante el código original + una variación. Tomando este código *mutante* se le aplica el conjunto de pruebas. Si el conjunto de pruebas fueron ejecutadas sin reportar una falla (todas fueron verdes) decimos que el mutante sobrevivió y el conjunto de pruebas es **defectuoso**. 
 
 La herramienta que vamos a utilizar para ejecutar estas pruebas de mutación será: [MuTalk](https://github.com/pharo-contributions/mutalk).
+
+> [!NOTE]
+> Utilizar la **Latest release version** de MuTalk para el TP1.
 
 Para ejecutar las pruebas de mutación y obtener el reporte necesitamos:
 
